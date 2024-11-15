@@ -1,0 +1,1 @@
+select e.idEstudiante, e.nombres, e.apellidos,e.activo, m.nombre from Estudiantes e inner join MateriasEstudiantes me ON e.idEstudiante = me.idEstudiante inner join Materias m ON me.idMateria = m.idMateria where e.activo = "S" and m.activo = "S";
